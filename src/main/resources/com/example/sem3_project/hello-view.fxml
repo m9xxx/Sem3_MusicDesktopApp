@@ -14,12 +14,12 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sem3_project.HelloController">
    <children>
       <HBox prefHeight="122.0" prefWidth="1200.0">
          <children>
-            <TextField prefHeight="170.0" prefWidth="1010.0" promptText="Search" />
-            <Button mnemonicParsing="false" prefHeight="170.0" prefWidth="202.0" text="🔍">
+            <TextField fx:id="SearchField" prefHeight="170.0" prefWidth="1010.0" promptText="Search" />
+            <Button fx:id="SearchButton" mnemonicParsing="false" prefHeight="170.0" prefWidth="202.0" text="🔍">
                <font>
                   <Font name="Arial" size="24.0" />
                </font>
@@ -38,7 +38,7 @@
           <RowConstraints minHeight="20.0" prefHeight="60.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+            <VBox fx:id="OBJ_00" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
                <children>
                   <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -47,7 +47,7 @@
                   </ImageView>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - Yeezus" textAlignment="CENTER" />
                </children></VBox>
-            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+            <VBox fx:id="OBJ_01" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
                <children>
                   <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -56,7 +56,7 @@
                   </ImageView>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - ye" />
                </children></VBox>
-            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+            <VBox fx:id="OBJ_02" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
                <children>
                   <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -65,7 +65,7 @@
                   </ImageView>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - Jesus Is King" />
                </children></VBox>
-            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+            <VBox fx:id="OBJ_10" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
                <children>
                   <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -74,7 +74,7 @@
                   </ImageView>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - 808's &amp; Heartbreaks" />
                </children></VBox>
-            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <VBox fx:id="OBJ_11" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
                   <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -83,7 +83,7 @@
                   </ImageView>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - Graduation" />
                </children></VBox>
-            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <VBox fx:id="OBJ_12" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <children>
                   <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -92,7 +92,7 @@
                   </ImageView>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - College Dropout" />
                </children></VBox>
-            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+            <VBox fx:id="OBJ_20" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
                <children>
                   <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -101,7 +101,7 @@
                   </ImageView>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - Donda" />
                </children></VBox>
-            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <VBox fx:id="OBJ_21" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
                   <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -110,7 +110,7 @@
                   </ImageView>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - The Life Of Pablo" />
                </children></VBox>
-            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <VBox fx:id="OBJ_22" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <children>
                   <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -127,15 +127,15 @@
                <children>
                   <HBox prefHeight="200.0" prefWidth="400.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="75.0" text="⏮">
+                        <Button fx:id="Track_Previous" mnemonicParsing="false" prefHeight="50.0" prefWidth="75.0" text="⏮">
                            <font>
                               <Font name="Arial" size="24.0" />
                            </font></Button>
-                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="178.0" text="⏯">
+                        <Button fx:id="Track_StartStop" mnemonicParsing="false" prefHeight="50.0" prefWidth="178.0" text="⏯">
                            <font>
                               <Font name="Arial" size="24.0" />
                            </font></Button>
-                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" text="⏭">
+                        <Button fx:id="Track_Forward" mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" text="⏭">
                            <font>
                               <Font name="Arial" size="24.0" />
                            </font></Button>
@@ -145,13 +145,13 @@
                      <children>
                         <VBox prefHeight="80.0" prefWidth="198.0">
                            <children>
-                              <TextField promptText="Kanye West" text="Kanye West" />
+                              <TextField fx:id="Current_Artist" promptText="Kanye West" text="Kanye West" />
                               <VBox prefHeight="11.0" prefWidth="144.0" />
-                              <TextField text="Jonah" />
+                              <TextField fx:id="Current_Track" text="Jonah" />
                            </children>
                         </VBox>
                         <HBox prefHeight="100.0" prefWidth="200.0" />
-                        <ImageView fitHeight="80.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="Current_Cover" fitHeight="80.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@e073a37e5ffcf442900c023bf4349036.1000x1000x1.png" />
                            </image></ImageView>
@@ -159,13 +159,13 @@
                   </HBox>
                   <HBox prefHeight="200.0" prefWidth="400.0">
                      <children>
-                        <Slider prefHeight="62.0" prefWidth="280.0" />
-                        <Button mnemonicParsing="false" text="Repeat" />
+                        <Slider fx:id="Volume_Slider" prefHeight="62.0" prefWidth="280.0" />
+                        <Button fx:id="RepeatButton" mnemonicParsing="false" text="Repeat" />
                      </children>
                   </HBox>
                </children>
             </HBox>
-            <ProgressBar prefHeight="50.0" prefWidth="1200.0" progress="0.35" />
+            <ProgressBar fx:id="TrackProgress" prefHeight="50.0" prefWidth="1200.0" progress="0.35" />
          </children>
       </VBox>
    </children>
