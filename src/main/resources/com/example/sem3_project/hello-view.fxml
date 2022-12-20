@@ -151,7 +151,7 @@
                            </children>
                         </VBox>
                         <HBox prefHeight="100.0" prefWidth="200.0" />
-                        <ImageView fx:id="Current_Cover" fitHeight="80.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="80.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@e073a37e5ffcf442900c023bf4349036.1000x1000x1.png" />
                            </image></ImageView>
