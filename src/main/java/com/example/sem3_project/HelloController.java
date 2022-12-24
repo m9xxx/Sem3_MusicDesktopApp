@@ -1,8 +1,21 @@
 package com.example.sem3_project;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.scene.media.MediaView;
+import javafx.scene.web.WebView;
+
+import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ResourceBundle;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class HelloController {
     @FXML
@@ -29,24 +42,23 @@ public class HelloController {
     private VBox OBJ_21;
     @FXML
     private VBox OBJ_22;
+
+
     @FXML
-    private Button Track_Previous;
+    public ImageView yeezus;
+
+
     @FXML
-    private Button Track_StartStop;
+    private WebView webview;
+
     @FXML
-    private Button Track_Forward;
-    @FXML
-    private TextField Current_Artist;
-    @FXML
-    private TextField Current_Track;
-    @FXML
-    private TextField Current_Cover;
-    @FXML
-    private Slider Volume_Slider;
-    @FXML
-    private Button RepeatButton;
-    @FXML
-    private ProgressBar TrackProgress;
+    void playyeezus() {
+//        webview.getEngine().load("https://www.youtube.com/watch?v=uU9Fe-WXew4");
+        WebThread thread = new WebThread();
+        thread.run(webview, "https://www.youtube.com/watch?v=uU9Fe-WXew4");
+//        webaddr("https://www.youtube.com/watch?v=uU9Fe-WXew4").start();
+    }
+
 
 
 }

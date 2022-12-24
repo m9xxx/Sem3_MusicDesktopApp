@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ProgressBar?>
-<?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -13,6 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sem3_project.HelloController">
    <children>
@@ -40,7 +39,7 @@
          <children>
             <VBox fx:id="OBJ_00" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
                <children>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="yeezus" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#playyeezus" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@f4daff29a000bf818c5e53355c12d672.1000x1000x1.png" />
                      </image>
@@ -123,49 +122,7 @@
       </GridPane>
       <VBox prefHeight="176.0" prefWidth="1200.0">
          <children>
-            <HBox prefHeight="80.0" prefWidth="1200.0">
-               <children>
-                  <HBox prefHeight="200.0" prefWidth="400.0">
-                     <children>
-                        <Button fx:id="Track_Previous" mnemonicParsing="false" prefHeight="50.0" prefWidth="75.0" text="⏮">
-                           <font>
-                              <Font name="Arial" size="24.0" />
-                           </font></Button>
-                        <Button fx:id="Track_StartStop" mnemonicParsing="false" prefHeight="50.0" prefWidth="178.0" text="⏯">
-                           <font>
-                              <Font name="Arial" size="24.0" />
-                           </font></Button>
-                        <Button fx:id="Track_Forward" mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" text="⏭">
-                           <font>
-                              <Font name="Arial" size="24.0" />
-                           </font></Button>
-                     </children>
-                  </HBox>
-                  <HBox prefHeight="200.0" prefWidth="400.0">
-                     <children>
-                        <VBox prefHeight="80.0" prefWidth="198.0">
-                           <children>
-                              <TextField fx:id="Current_Artist" promptText="Kanye West" text="Kanye West" />
-                              <VBox prefHeight="11.0" prefWidth="144.0" />
-                              <TextField fx:id="Current_Track" text="Jonah" />
-                           </children>
-                        </VBox>
-                        <HBox prefHeight="100.0" prefWidth="200.0" />
-                        <ImageView fitHeight="80.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@e073a37e5ffcf442900c023bf4349036.1000x1000x1.png" />
-                           </image></ImageView>
-                     </children>
-                  </HBox>
-                  <HBox prefHeight="200.0" prefWidth="400.0">
-                     <children>
-                        <Slider fx:id="Volume_Slider" prefHeight="62.0" prefWidth="280.0" />
-                        <Button fx:id="RepeatButton" mnemonicParsing="false" text="Repeat" />
-                     </children>
-                  </HBox>
-               </children>
-            </HBox>
-            <ProgressBar fx:id="TrackProgress" prefHeight="50.0" prefWidth="1200.0" progress="0.35" />
+            <WebView fx:id="webview" prefHeight="200.0" prefWidth="200.0" />
          </children>
       </VBox>
    </children>
