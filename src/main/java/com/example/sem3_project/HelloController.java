@@ -1,5 +1,7 @@
 package com.example.sem3_project;
 
+import javafx.concurrent.Service;
+import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
@@ -9,6 +11,7 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
 import javafx.scene.web.WebView;
+import javafx.concurrent.*;
 
 import java.io.File;
 import java.net.MalformedURLException;
@@ -58,7 +61,5 @@ public class HelloController {
         thread.run(webview, "https://www.youtube.com/watch?v=uU9Fe-WXew4");
 //        webaddr("https://www.youtube.com/watch?v=uU9Fe-WXew4").start();
     }
-
-
 
 }
