@@ -12,6 +12,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.web.WebView?>
 
@@ -19,8 +20,11 @@
    <children>
       <HBox prefHeight="48.0" prefWidth="1200.0" style="-fx-background-color: black;">
          <children>
-            <Label fx:id="connectstatus" prefHeight="36.0" prefWidth="1200.0" text="Label" />
-            <Button fx:id="Connectbutton" mnemonicParsing="false" onAction="#Start" prefHeight="25.0" prefWidth="358.0" text="StartCheck" />
+            <Label fx:id="connectstatus" prefHeight="36.0" prefWidth="1200.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Button fx:id="Connectbutton" mnemonicParsing="false" onAction="#Start" prefHeight="25.0" prefWidth="358.0" text="StartCheck" textOverrun="CLIP" wrapText="true" />
          </children>
       </HBox>
       <GridPane prefHeight="891.0" prefWidth="1200.0" style="-fx-background-color: BLACK;">
@@ -49,7 +53,7 @@
                         </DropShadow>
                      </effect>
                   </ImageView>
-                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - Yeezus" textAlignment="CENTER">
+                  <Text fill="WHITE" onMouseClicked="#playyeezus" strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - Yeezus" textAlignment="CENTER">
                      <VBox.margin>
                         <Insets top="20.0" />
                      </VBox.margin></Text>
@@ -71,7 +75,7 @@
                         </DropShadow>
                      </effect>
                   </ImageView>
-                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - ye">
+                  <Text fill="WHITE" onMouseClicked="#playye" strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - ye">
                      <VBox.margin>
                         <Insets top="20.0" />
                      </VBox.margin></Text>
@@ -93,7 +97,7 @@
                         </DropShadow>
                      </effect>
                   </ImageView>
-                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - Jesus Is King">
+                  <Text fill="WHITE" onMouseClicked="#playjik" strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - Jesus Is King">
                      <VBox.margin>
                         <Insets top="20.0" />
                      </VBox.margin></Text>
@@ -115,7 +119,7 @@
                         </DropShadow>
                      </effect>
                   </ImageView>
-                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - 808's &amp; Heartbreaks">
+                  <Text fill="WHITE" onMouseClicked="#play808" strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - 808's &amp; Heartbreaks">
                      <VBox.margin>
                         <Insets top="20.0" />
                      </VBox.margin></Text>
@@ -134,7 +138,7 @@
                         </DropShadow>
                      </effect>
                   </ImageView>
-                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - Graduation">
+                  <Text fill="WHITE" onMouseClicked="#playgraduation" strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - Graduation">
                      <VBox.margin>
                         <Insets top="20.0" />
                      </VBox.margin></Text>
@@ -153,7 +157,7 @@
                         </DropShadow>
                      </effect>
                   </ImageView>
-                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - College Dropout">
+                  <Text fill="WHITE" onMouseClicked="#playcd" strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - College Dropout">
                      <VBox.margin>
                         <Insets top="20.0" />
                      </VBox.margin></Text>
@@ -172,7 +176,7 @@
                         </DropShadow>
                      </effect>
                   </ImageView>
-                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - Donda">
+                  <Text fill="WHITE" onMouseClicked="#playdonda" strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - Donda">
                      <VBox.margin>
                         <Insets top="20.0" />
                      </VBox.margin></Text>
@@ -191,7 +195,7 @@
                         </DropShadow>
                      </effect>
                   </ImageView>
-                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - The Life Of Pablo">
+                  <Text fill="WHITE" onMouseClicked="#playtlop" strokeType="OUTSIDE" strokeWidth="0.0" text="Kanye West - The Life Of Pablo">
                      <VBox.margin>
                         <Insets top="20.0" />
                      </VBox.margin></Text>
@@ -210,7 +214,7 @@
                         </DropShadow>
                      </effect>
                   </ImageView>
-                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="MISHARAL - Потолок оранжевой эйфории">
+                  <Text fill="WHITE" onMouseClicked="#playmisharal" strokeType="OUTSIDE" strokeWidth="0.0" text="MISHARAL - Потолок оранжевой эйфории">
                      <VBox.margin>
                         <Insets top="20.0" />
                      </VBox.margin></Text>
@@ -220,7 +224,7 @@
             <Insets />
          </VBox.margin>
       </GridPane>
-      <VBox prefHeight="275.0" prefWidth="1200.0" style="-fx-background-color: black;">
+      <VBox prefHeight="210.0" prefWidth="1200.0" style="-fx-background-color: black;">
          <children>
             <WebView fx:id="webview" prefHeight="0" prefWidth="0" />
          </children>
